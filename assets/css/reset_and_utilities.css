@@ -1,0 +1,72 @@
+/***************************************************************************************************************/
+/********** FOGLIO DI STILE CONTENENTE CLASSI CON FUNZIONI DI RESET ATTRIBUTI E FUNZIONI DI UTILITIES **********/
+/***************************************************************************************************************/
+
+/***********************************/
+/********** SEZIONE RESET **********/
+/***********************************/
+
+/********************************/
+/********** 17/02/2023 **********/
+/* #reset_box_all */
+/* .reset_font */
+/* .reset_list_style */
+/* .reset_decor */
+/********************************/
+
+/* Reset degli attributi box */
+#reset_box_all *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ritorno al font di default */
+.reset_font{
+    font-family: initial;
+}
+
+/* Reset dei marcatori di lista */
+.reset_list_style{
+    list-style: none;
+}
+
+/* Reset decorazione di testo */
+.reset_decor{
+    text-decoration: none;
+}
+
+
+/****************************************/
+/**********　SEZIONE UTILITIES **********/
+/****************************************/
+
+/********************************/
+/********** 17/02/2023 **********/
+/* .float_l */
+/* .float_r */
+/* .clearfix::after*/
+/* .display_ib */
+/********************************/
+
+/* Float left */
+.float_l{
+    float: left;
+}
+
+/* Float right */
+.float_r{
+    float: right;
+}
+
+/* Clearfix "both" */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Display inline block */
+.display_ib{
+    display: inline-block;
+}
