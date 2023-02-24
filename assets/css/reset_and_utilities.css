@@ -131,17 +131,20 @@
     justify-content: center;
 }
 
+.flex_main_btw{
+    justify-content: space-between;
+}
+
+.flex_main_evenly{
+    justify-content: space-evenly;
+}
+
+.flex_main_around{
+    justify-content: space-around;
+}
+
 .flex_cross_center{
     align-items: center;
-}
-
-.flex_center_center{
-    justify-content: center;
-    align-items: center;
-}
-
-.flex_space_btw{
-    justify-content: space-between;
 }
 
 /* Debug giallo*/
