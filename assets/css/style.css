@@ -8,6 +8,11 @@
     --footer_end_meeting_color: #4A4A4A;
 }
 
+a{
+    color: white;
+    background-color: var(--footer_color);
+}
+
 /* Contenitore di tutta la pagina */
 #box_100vh{
     width: 100%;
@@ -71,13 +76,12 @@
 }
 
 #speaker_view{
-    color: white;
     font-size: small;
     font-weight: 200;
     margin: 10px 5px;
 }
 
-#speaker_view span{
+#speaker_view a{
     padding: 5px;
     background-color: var(--footer_color);
     margin-left: 5px;
@@ -112,10 +116,6 @@
     font-size: small;
 }
 
-.icon_button + span{
-    font-weight: 900;
-}
-
 #icons li:nth-child(4) h2{
     color: orange;
 }
@@ -126,4 +126,9 @@
     color: red;
     text-align: center;
     padding: 0 10px;
+}
+
+#end_meeting a{
+    color: red;
+    background-color: var(--footer_end_meeting_color);
 }
