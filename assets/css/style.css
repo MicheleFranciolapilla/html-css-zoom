@@ -71,12 +71,16 @@
 
 #speaker_view{
     color: white;
+    font-size: small;
+    font-weight: 200;
+    margin: 10px 5px;
 }
 
-.revert_colors{
-    color: var(--footer_color);
-    background-color: white;
-    padding: 0;
+#speaker_view span{
+    padding: 5px;
+    background-color: var(--footer_color);
+    margin-left: 5px;
+    border-radius: 5px;
 }
 
 #footer_bar{
