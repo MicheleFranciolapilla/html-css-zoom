@@ -108,6 +108,11 @@
     bottom: 0;
 }
 
+.p_right_top{
+    right: 0;
+    top: 0;
+}
+
 /* Display inline block */
 .d_ib{
     display: inline-block;
