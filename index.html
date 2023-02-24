@@ -249,13 +249,35 @@
 
         <!-- Footer: contenitore del pie' di pagina (fixed) -->
         <footer>
-            <div id="footer_bar" class="p_fixed_footer d_flex flex_main_btw">
+            <div id="footer_bar" class="p_fixed_footer d_flex flex_main_btw flex_cross_center">
                 <!-- Icone Audio/Video a sx -->
-                <ul #av class="debug_r">
-                    <li>prova</li>
+                <ul id="av" class="debug_r reset_list_style">
+                    <li>
+                        <div>
+                            <div class="icon_button">
+                                <h2>
+                                    <i class="fa-solid fa-microphone"></i>
+                                </h2>
+                                <span>Mute</span>
+                            </div>
+                            <span>^</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="icon_button">
+                                <h2>
+                                    <i class="fa-solid fa-video"></i>
+                                </h2>
+                                <span>Stop Video</span>
+                            </div>
+                            <span>^</span>
+                        </div>
+                        
+                    </li>
                 </ul>
                 <!-- Icone centrali -->
-                <ul #icons class="debug_r">
+                <ul id="icons" class="debug_r reset_list_style">
                     <li>prova</li>
                 </ul>
                 <!-- End meeting a dx -->

@@ -88,7 +88,29 @@
     background-color: var(--footer_color);
 }
 
-#av, #icons{
-    height: 90%;
-    width: 10%;
+/* #av, #icons{
+    height: 100%;
+    width: 20%;
+} */
+
+#footer_bar ul > li{
+    display: inline-block;
+    color: white;
+    padding: 0 5px;
+}
+
+.icon_button{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.icon_button > span{
+    margin-top: 10px;
+    font-size: small;
+}
+
+.icon_button + span{
+    font-weight: 900;
 }
