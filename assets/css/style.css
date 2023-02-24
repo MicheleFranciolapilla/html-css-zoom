@@ -1,0 +1,32 @@
+/* Definizione variabili */
+:root{
+    --users_on_row: 7;
+    --users_on_col: 5;
+    --footer_height: 10%;
+}
+
+/* Contenitore di tutta la pagina */
+#box_100vh{
+    height: 100vh;
+}
+
+.user{
+    flex-basis: calc(90% / var(--users_on_row));
+    height: calc(80% / var(--users_on_col));
+}
+
+.user_id{
+    padding: 5px 10px;
+    font-size: small;
+    color: whitesmoke;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#footer_bar{
+    height: var(--footer_height);
+}
+
+#av, #icons{
+    height: 90%;
+    width: 10%;
+}

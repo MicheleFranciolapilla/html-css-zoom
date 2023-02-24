@@ -10,6 +10,9 @@
     <!-- Link al foglio di stile -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Link a fontawesome per le icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Zoom</title>
 </head>
 
@@ -17,20 +20,31 @@
 
 <body>
 
-    <!-- Contenitore principale che include tutta la pagina e tutti i tag semantici -->
-    <dir id="reset_box_all">
-       
-       <!-- Main: contenitore del flex (100vh) -->
+       <!-- Main: contenitore (100vh) -->
         <main>
-
+            <div id="box_100vh" class="debug_y debug_bkgr_r d_flex flex_wrap flex_center_center">
+                <div class="user p_rel">
+                    <img src="https://picsum.photos/300/200" alt="foto" width="100%">
+                    <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
+                </div>
+            </div>
         </main>
 
         <!-- Footer: contenitore del pie' di pagina (fixed) -->
         <footer>
-
+            <div id="footer_bar" class="debug_b p_fixed_footer d_flex flex_space_btw">
+                <!-- Icone Audio/Video a sx -->
+                <ul #av class="debug_r">
+                    <li>prova</li>
+                </ul>
+                <!-- Icone centrali -->
+                <ul #icons class="debug_r">
+                    <li>prova</li>
+                </ul>
+                <!-- End meeting a dx -->
+                <span>END MEETING</span>
+            </div>
         </footer>
 
-    </dir>
-    
 </body>
 </html>
