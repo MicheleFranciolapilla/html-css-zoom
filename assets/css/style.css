@@ -93,11 +93,6 @@ a{
     background-color: var(--footer_color);
 }
 
-/* #av, #icons{
-    height: 100%;
-    width: 20%;
-} */
-
 #footer_bar ul > li{
     display: inline-block;
     color: white;
@@ -128,7 +123,6 @@ a{
     padding: 0 10px;
 }
 
-#end_meeting a{
-    color: red;
-    background-color: var(--footer_end_meeting_color);
+#end_meeting div{
+    height: 100%;
 }

@@ -1,5 +1,5 @@
 /***************************************************************************************************************/
-/********** FOGLIO DI STILE CONTENENTE CLASSI CON FUNZIONI DI RESET ATTRIBUTI E FUNZIONI DI UTILITIES **********/
+/******* FOGLIO DI STILE CONTENENTE CLASSI CON FUNZIONI DI RESET ATTRIBUTI, DEBUG E FUNZIONI DI UTILITIES ******/
 /***************************************************************************************************************/
 
 /***********************************/
@@ -7,7 +7,6 @@
 /***********************************/
 
 /********************************/
-/********** 17/02/2023 **********/
 /* *{} (reset box) */
 /* .reset_font */
 /* .reset_list_style */
@@ -36,27 +35,57 @@
     text-decoration: none;
 }
 
+/****************************************/
+/**********　SEZIONE DEBUG***************/
+/****************************************/
+
+/********************************/
+/* .debug_y */
+/* .debug_r */
+/* .debug_b */
+/* .debug_bkgr_y */
+/* .debug_bkgr_r */
+/* .debug_bkgr_b */
+/********************************/
+
+/* Debug bordo giallo*/
+.debug_y{
+    border: 5px solid yellow;
+}
+
+/* Debug bordo rosso*/
+.debug_r{
+    border: 5px solid red;
+}
+/* Debug bordo blu*/
+.debug_b{
+    border: 5px solid blue;
+}
+
+/* Debug sfondo giallo */
+.debug_bkgr_y{
+    background-color: yellow;
+}
+
+/* Debug sfondo rosso */
+.debug_bkgr_r{
+    background-color: red;
+}
+
+/* Debug sfondo blu */
+.debug_bkgr_b{
+    background-color: blue;
+}
 
 /****************************************/
 /**********　SEZIONE UTILITIES **********/
 /****************************************/
 
-/********************************/
-/********** 17/02/2023 **********/
+/********** FLOAT E CLEARFIX **********/
 /* .float_l */
 /* .float_r */
-/* .clearfix::after*/
-/* .d_ib */
-/********************************/
-/********** 23/02/2023 **********/
-/* .d_block */
-/* .d_flex */
-/********************************/
-/********** 24/02/2023 **********/
-/* debug_y */
-/* debug_r */
-/* debug_b */
-/********************************/
+/* .clearfix::after */
+/**************************************/
 
 /* Float left */
 .float_l{
@@ -75,18 +104,58 @@
     clear: both;
 }
 
+/********** POSITION **********/
+/* .p_rel */
+/* .p_abs */
+/* .p_left_bottom */
+/* .p_right_top */
+/* .p_left_top */
+/* .p_right_bottom */
+/* .p_fixed */
+/* .p_fixed_header */
+/* .p_fixed_footer */
+/*****************************/
+
+/* Position relative */
 .p_rel{
     position: relative;
 }
 
+/* Position absolute */
 .p_abs{
     position: absolute;
 }
 
+/* Posizionamento (absolute), angolo sx/basso */
+.p_left_bottom{
+    left: 0;
+    bottom: 0;
+}
+
+/* Posizionamento (absolute), angolo dx/alto */
+.p_right_top{
+    right: 0;
+    top: 0;
+}
+
+/* Posizionamento (absolute), angolo sx/alto */
+.p_left_top{
+    left: 0;
+    top: 0;
+}
+
+/* Posizionamento (absolute), angolo dx/basso */
+.p_right_bottom{
+    right: 0;
+    bottom: 0;
+}
+
+/* Position fixed */
 .p_fixed{
     position: fixed;
 }
 
+/* Header fixed e in primo piano */
 .p_fixed_header{
     position: fixed;
     top: 0;
@@ -95,6 +164,7 @@
     z-index: 999;
 }
 
+/* Footer fixed e in primo piano */
 .p_fixed_footer{
     position: fixed;
     bottom: 0;
@@ -103,15 +173,18 @@
     z-index: 999;
 }
 
-.p_left_bottom{
-    left: 0;
-    bottom: 0;
-}
-
-.p_right_top{
-    right: 0;
-    top: 0;
-}
+/********** DISPLAY **********/
+/* .d_ib */
+/* .d_block */
+/* .d_flex */
+/* .flex_wrap */
+/* .flex_main_center */
+/* .flex_main_btw */
+/* .flex_main_evenly */
+/* .flex_main_around */
+/* .flex_cross_center */
+/* .flex_center */
+/*****************************/
 
 /* Display inline block */
 .d_ib{
@@ -152,28 +225,7 @@
     align-items: center;
 }
 
-/* Debug giallo*/
-.debug_y{
-    border: 5px solid yellow;
-}
-
-/* Debug rosso*/
-.debug_r{
-    border: 5px solid red;
-}
-/* Debug blu*/
-.debug_b{
-    border: 5px solid blue;
-}
-
-.debug_bkgr_y{
-    background-color: yellow;
-}
-
-.debug_bkgr_r{
-    background-color: red;
-}
-
-.debug_bkgr_b{
-    background-color: blue;
+.flex_center{
+    justify-content: center;
+    align-items: center;
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link al css personale di reset e utilities -->
+    <!-- Link al css personale di reset, debug e utilities -->
     <link rel="stylesheet" href="assets/css/reset_and_utilities.css">
     <!-- Link al foglio di stile -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -16,16 +16,17 @@
     <title>Zoom</title>
 </head>
 
-<!-- Contenitore flex (100vh) con padding, il cui contenuto sono 7 col. X 5 rows items rappresentati da foto (relative) e nome (absolute). Nell'angolo top/right ci sono due elementi (absolute). In basso una footer bar (fixed - z-index alto) al cui interno ha luogo il nav (al centro), icone audio e video (sinistra) e riquadro end meeting (destra). Il footer potrebbe essere un flexbox -->
-
 <body>
 
-       <!-- Main: contenitore (100vh) -->
         <main>
+            <!-- Main: contenitore (100vh) -->
             <div id="box_100vh" class="p_rel d_flex">
+                <!-- Ho scelto di strutturare la pagina con contenitori flex nidificati, per prendere piu' dimistichezza con i flexbox ed annidarli, appunto, con flex-direction ad oltranza -->
+                <!-- #box_100vh e' un flex container con main axis verticale, i suoi flex items sono i margini di pagina superiore ed inferiore ed il blocco centrale -->
                 <div id="upper_margin"></div>
                 <div id="lower_margin"></div>
                 <div id="middle_block" class="d_flex">
+                    <!-- Il blocco centrale #middle_block e' un flex container con main axis orizzontale, i cui flex items sono i due margini, sx e dx e #users_collection, ovvero il contenitore flex che raccoglie tutte le cards (users) -->
                     <div id="left_margin"></div>
                     <div id="right_margin"></div>
                     <div id="users_collection" class="d_flex flex_wrap flex_main_btw">
@@ -37,13 +38,13 @@
 
                         <!-- Riquadro utente 2 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/600/400" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
                         <!-- Riquadro utente 3 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/450/300" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
@@ -55,19 +56,19 @@
 
                         <!-- Riquadro utente 5 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/900/600" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
                         <!-- Riquadro utente 6 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/600/400" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
                         <!-- Riquadro utente 7 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/330/220" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
@@ -79,19 +80,19 @@
 
                         <!-- Riquadro utente 9 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/900/600" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
                         <!-- Riquadro utente 10 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/500/300" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
                         <!-- Riquadro utente 11 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/800/500" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
@@ -103,7 +104,7 @@
 
                         <!-- Riquadro utente 13 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/700/600" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
@@ -115,7 +116,7 @@
 
                         <!-- Riquadro utente 15 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/200/200" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
@@ -133,25 +134,25 @@
 
                         <!-- Riquadro utente 18 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/500/300" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
                         <!-- Riquadro utente 19 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/450/250" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
                         <!-- Riquadro utente 20 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/300/300" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
                         <!-- Riquadro utente 21 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/300/280" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
@@ -163,31 +164,31 @@
 
                         <!-- Riquadro utente 23 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/380/250" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
                         <!-- Riquadro utente 24 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/400/300" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
     
                         <!-- Riquadro utente 25 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/350/260" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
                         <!-- Riquadro utente 26 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/900/600" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
                         <!-- Riquadro utente 27 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/600/450" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
@@ -199,47 +200,48 @@
 
                         <!-- Riquadro utente 29 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/300/230" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
                         <!-- Riquadro utente 30 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/320/200" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
                         <!-- Riquadro utente 31 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/800/600" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
                         <!-- Riquadro utente 32 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/700/600" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
                         <!-- Riquadro utente 33 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/300/240" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
                         <!-- Riquadro utente 34 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/330/200" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
 
                         <!-- Riquadro utente 35 -->
                         <div class="user p_rel">
-                            <img src="https://picsum.photos/300/200" alt="foto">
+                            <img src="https://picsum.photos/300/280" alt="foto">
                             <span class="user_id p_abs p_left_bottom d_ib"><i class="fa-solid fa-microphone-slash"></i> PincoPallo</span>
                         </div>
                     </div>
                 </div>
+                <!-- #speaker_view e' il gruppo delle due icone in alto a destra, posizionate abs sul container 100vh -->
                 <div id="speaker_view" class="p_abs p_right_top">
                     <a href="#" class="reset_decor"><i class="fa-solid fa-table-cells"></i> Speaker View</a>
                     <a href="#" class="reset_decor"><i class="fa-solid fa-maximize"></i></a>
@@ -249,8 +251,9 @@
 
         <!-- Footer: contenitore del pie' di pagina (fixed) -->
         <footer>
+            <!-- #footer_bar, posizionato fixed ed in primo piano (z-index 999) e' un flex container dentro cui prendono posto i tre macro elementi del menu', ovvero: -->
             <div id="footer_bar" class="p_fixed_footer d_flex flex_main_btw flex_cross_center">
-                <!-- Icone Audio/Video a sx -->
+                <!-- 1) Icone Audio/Video a sx -->
                 <ul id="av" class="reset_list_style">
                     <li>
                         <a href="#" class="reset_decor">
@@ -283,7 +286,7 @@
                         </a>
                      </li>
                 </ul>
-                <!-- Icone centrali -->
+                <!-- 2) Icone centrali -->
                 <ul id="icons" class="reset_list_style">
                     <li>
                         <a href="#" class="reset_decor">
@@ -373,12 +376,12 @@
                         </a>
                     </li>
                 </ul>
-                <!-- End meeting a dx -->
-                <div id="end_meeting" class="d_flex flex_cross_center">
-                    <a href="#" class="reset_decor">
+                <!-- 3) Selezione "End meeting" a dx -->
+                <a href="#" id="end_meeting" class="reset_decor">
+                    <div class="d_flex flex_cross_center">
                         <span>End meeting</span>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </footer>
 
